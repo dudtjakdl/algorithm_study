@@ -1,7 +1,12 @@
 package Brute_Force;
 
 import java.util.Scanner;
-
+/*
+ * 문제 출처 : 백준
+ * 문제 링크 : https://www.acmicpc.net/problem/2798
+ * 걸린 시간 : 15분
+ * 느낀 점 : 생성자가 되는 조건을 생각하는게 약간 시간이 걸렸다.
+*/
 public class BOJ_2798_블랙잭 {
 
 	public static void main(String[] args) {
