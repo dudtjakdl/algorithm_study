@@ -22,7 +22,7 @@ public class BOJ_2750_수_정렬하기 {
 			arr[i] = sc.nextInt();
 		}
 		
-		for(int i=0; i<N; i++) { // 총 수행해야하는 round 수 만큼 반복
+		for(int i=0; i<N-1; i++) { // 총 수행해야하는 round 수 만큼 반복
 			for(int j=0; j<N-i-1; j++) { // 이미 정렬된 부분을 제외하고 이웃한 두 값끼리 비교
 				
 				if(arr[j] > arr[j+1]) { // 왼쪽 값이 오른쪽 값보다 크면 swap(오름차순 정렬)
