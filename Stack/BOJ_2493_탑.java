@@ -7,7 +7,7 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 /*
  * 문제 출처 : 백준
- * 문제 링크 : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWT-lPB6dHUDFAVT#none
+ * 문제 링크 : https://www.acmicpc.net/problem/2493
  * 걸린 시간 : 2시간 이상
 */
 public class BOJ_2493_탑 {
