@@ -8,6 +8,8 @@ import java.util.StringTokenizer;
  * 문제 출처 : 백준
  * 문제 링크 : https://www.acmicpc.net/problem/2630
  * 걸린 시간 : 15분
+ * 리뷰 : 배열 크기가 1인 경우의 기저조건을 굳이 넣어주지 않았어도 어차피 1의 개수를 세는 반복문에서
+ * 그 칸이 1인지 아닌지 한번만 세주기 때문에 그 부분의 코드를 생략해주어도 좋았을 것 같다.
 */
 public class BOJ_2630_색종이_만들기 {
 	static int[][] map;
