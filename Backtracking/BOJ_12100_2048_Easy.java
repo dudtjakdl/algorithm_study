@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 /*
  * 문제 출처 : 백준
  * 문제 링크 : https://www.acmicpc.net/problem/12100
- * 걸린 시간 : 120분
+ * 걸린 시간 : 180분
  */
 public class BOJ_12100_2048_Easy {
 	static int N;
