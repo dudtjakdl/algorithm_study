@@ -32,7 +32,8 @@ public class BOJ_2108_통계학 {
 		}
 		
 		double average = sum / N;
-		
+		// average가 -0.5와 0사이일때 반올림하면 -0이 나오는 걸 방지하기 위한 연산
+		average = average > -0.5 && average < 0 ? average*(-1) : average;
 		Arrays.sort(arr); // 배열 오름차순 정렬
 	
 		Map<Integer, Integer> hMap = new HashMap<>();
