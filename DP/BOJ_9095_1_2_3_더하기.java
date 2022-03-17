@@ -20,16 +20,19 @@ public class BOJ_9095_1_2_3_더하기 {
 		
 		for (int test_case = 1; test_case <= T; test_case++) {
 			int n = Integer.parseInt(br.readLine());
-			int[] memory = new int[11];
+			int[] memory = new int[11]; // 결과값을 기억하기 위한 배열
 			
+			// 1, 2, 3의 방법의 수 초기화
 			memory[1] = 1;
 			memory[2] = 2;
 			memory[3] = 4;
 			
+			// 4부터 n까지 차례로 결과값 구하기
 			for (int i = 4; i <= n; i++) {
 				memory[i] = memory[i-1] + memory[i-2] + memory[i-3];
 			}
 			
+			// 결과 출력
 			System.out.println(memory[n]);
 		}
 		
