@@ -51,7 +51,7 @@ public class BOJ_1197_최소_스패닝_트리 {
 		}
 		
 		Arrays.sort(edgeList); // 간선비용(가중치)의 오름차순 정렬
-		makeSet(); // 각 간선의 단위 집합 생성
+		makeSet(); // 각 정점의 단위 집합 생성
 		
 		int result = 0; // 결과값 (최소 신장 트리의 가중치 합)
 		int cnt = 0; // 경로를 이은 횟수
