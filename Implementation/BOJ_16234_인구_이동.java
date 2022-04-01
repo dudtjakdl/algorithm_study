@@ -68,6 +68,8 @@ public class BOJ_16234_인구_이동 {
 					}
 				}
 				
+				union[startRow][startCol] = n; // 시작위치에 연합번호 표시
+				
 				// 4방 탐색 -> 탐색 시작 칸이 연합을 이룰 수 있는지 체크
 				for (int i = 0; i < 4; i++) {
 					int nr = startRow+deltas[i][0];
@@ -78,10 +80,6 @@ public class BOJ_16234_인구_이동 {
 						break;
 					}
 					
-					if (i == 3) {
-						// 탐색 시작 칸이 어떠한 국가와도 연합을 이룰 수 없으면 혼자서만 연합 이루기
-						union[startRow][startCol] = n;
-					}
 				}
 							
 				// 모든 국가를 방문했으면 인구이동 끝
@@ -109,8 +107,6 @@ public class BOJ_16234_인구_이동 {
 		
 		List<int[]> countries = new ArrayList<int[]>(); // 연합국가 리스트
 		countries.add(new int[] {startRow, startCol}); // 시작위치 리스트에 넣기
-		
-		union[startRow][startCol] = n; // 시작위치에 연합번호 표시
 		
 		int cnt = 1; // 연합을 이루고 있는 칸의 개수
 		int sum = map[startRow][startCol]; // 연합의 총 인구수 -> 시작위치의 인구수로 초기화
