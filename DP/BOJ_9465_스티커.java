@@ -42,13 +42,13 @@ public class BOJ_9465_스티커 {
 			dp[1][1] = score1[1]; // 1행 1열 스티커 점수를 선택했을 때의 점수
 			dp[2][1] = score2[1]; // 2행 1열 스티커 점수를 선택했을 때의 점수
 			
-			for (int i = 2; i <= n; i++) {
+			for (int col = 2; col <= n; col++) {
 				// i열 스티커를 무엇도 선택하지 않았을 때의 최대 점수 저장
-				dp[0][i] = Math.max(dp[1][i-1], dp[2][i-1]);
+				dp[0][col] = Math.max(dp[1][col-1], dp[2][col-1]);
 				// 1행 i열 스티커를 선택했을 때의 최대 점수 저장
-				dp[1][i] = Math.max(dp[0][i-1]+score1[i], dp[2][i-1]+score1[i]);
+				dp[1][col] = Math.max(dp[0][col-1]+score1[col], dp[2][col-1]+score1[col]);
 				// 2행 i열 스티커를 선택했을 때의 최대 점수 저장
-				dp[2][i] = Math.max(dp[0][i-1]+score2[i], dp[1][i-1]+score2[i]);
+				dp[2][col] = Math.max(dp[0][col-1]+score2[col], dp[1][col-1]+score2[col]);
 			}
 			
 			// 스티커 점수의 최댓값 구하기
