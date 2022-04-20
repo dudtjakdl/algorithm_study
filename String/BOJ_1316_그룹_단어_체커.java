@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 /*
  * 문제 출처 : 백준
- * 문제 링크 : https://www.acmicpc.net/problem/1543
+ * 문제 링크 : https://www.acmicpc.net/problem/1316
  * 걸린 시간 : 20분
  * 리뷰 : 알파벳이 소문자로만 이루어졌다 했으므로 (char형 알파벳 - 97)을 하면
  * a부터 z까지 각가 0부터 25의 값이 나오게 된다.
