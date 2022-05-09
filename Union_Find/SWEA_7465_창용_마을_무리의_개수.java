@@ -1,4 +1,4 @@
-package Etc;
+package Union_Find;
 
 import java.io.BufferedReader;
 import java.io.IOException;
