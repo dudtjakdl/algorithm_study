@@ -29,7 +29,7 @@ public class BOJ_15657_N과_M_8 {
 		System.out.println(sb);
 	}
 	
-	public static void combination(int cnt, int start) { // cnt : 직전까지 뽑은 수 개수
+	public static void combination(int cnt, int start) { // cnt : 직전까지 뽑은 수 개수, start : 중복 방지를 위한 인덱스 시작 위치
 		if(cnt == M) {
 			for(int n: numbers) {
 				sb.append(n + " ");
